@@ -85,41 +85,30 @@ shap.summary_plot(shap_values, X_test)
 📊 Permutation Feature Importance
 Ranked features based on their impact on predictions:
 
-python
-Copy
-Edit
+
 perm = permutation_importance(model, X_test, y_test, n_repeats=10)
 🗂️ Project Structure
-bash
-Copy
-Edit
+
 ├── diabetes_prediction.py        # Main script
 ├── diabetes.csv                  # Dataset
 ├── README.md                     # Documentation
 ▶️ How to Run
 Clone the repository
 
-bash
-Copy
-Edit
+
 git clone https://github.com/yourusername/diabetes-prediction-ml.git
 cd diabetes-prediction-ml
 Install dependencies
 
-bash
-Copy
-Edit
+
 pip install -r requirements.txt
 Run the script
 
-bash
-Copy
-Edit
+
 python diabetes_prediction.py
 📊 Sample Output
 java
-Copy
-Edit
+
 --- Model Performance Summary ---
 Gradient Boosting: F1 Score = 0.782, ROC AUC = 0.876
 SVM: F1 Score = 0.756, ROC AUC = 0.849
